@@ -67,6 +67,16 @@ export default function Footer() {
             onMouseLeave={e => e.target.style.color = "var(--text2)"}
           >
             GitHub API ↗
+            <span>·</span>
+            <a
+              href="https://gh-profile-gen.pages.dev"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "var(--text2)", textDecoration: "none" }}
+              onMouseEnter={e => e.target.style.color = "var(--brand)"}
+              onMouseLeave={e => e.target.style.color = "var(--text2)"}
+            >
+              Profile Readme Generator ↗
           </a>
         </div>
       </div>
