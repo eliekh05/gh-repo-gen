@@ -22,30 +22,6 @@ gh-repo-gen/
 └── frontend/      React + Vite — Cloudflare Pages
 ```
 
-## Deploy
-
-### Worker (Cloudflare Workers)
-
-```bash
-cd worker
-npm install
-npx wrangler secret put GITHUB_TOKEN   # optional but increases rate limits
-npx wrangler deploy
-```
-
-### Frontend (Cloudflare Pages)
-
-```bash
-cd frontend
-npm install
-npm run build
-npx wrangler pages deploy dist --project-name=gh-repo-gen
-```
-
-Or connect the GitHub repo to Cloudflare Pages with build command `npm run build` and output `dist`.
-
-Set `VITE_API_BASE` in Pages environment variables to point at your deployed worker URL.
-
 ## Environment variables
 
 | Variable | Where | Description |
