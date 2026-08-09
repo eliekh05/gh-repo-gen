@@ -78,7 +78,6 @@ export default function Footer() {
             >
               Profile Readme Generator ↗
           </a>
-        </div>
       </div>
     </footer>
   );
